@@ -16,7 +16,7 @@ namespace Repositorio
             {
                 sv = new StreamWriter("pedidos.csv", true);
                 sv.WriteLine(produto.Cod + ";" + produto.Nome + ";" + produto.PrecoVenda + ";" 
-                + produto.Data + ";" + produto.Unidade + ";"+ cliente.Nome+ ";" + cliente.Cpf+ ";" + DateTime.Now.ToLongDateString());
+                + produto.Data + ";" + produto.Unidade + ";"+ cliente.PF.Cpf+ ";" + cliente.PF.Nome+ ";" + DateTime.Now.ToLongDateString());
                 retorno = "Cadastrado com sucesso!";
             }
             catch (Exception ex)
