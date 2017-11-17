@@ -1,17 +1,14 @@
 using System;
 
-namespace Dominio.classes
+namespace Dominio
 {
-    public class PJ 
+    public class PJ : Pessoa
     {
         
-        public int Id { get; set; }
+        
         public string RazaoSocial { get; set; }
         public string Cnpj { get; set; }
-        public string Email { get; set; }
-        public string Telefone { get; set; }
         public DateTime DataCriacao { get; set; }
-        public Endereco endereco { get; set; }
 
         public PJ()
         {
@@ -25,7 +22,7 @@ namespace Dominio.classes
             this.Email = email;
             this.Telefone = telefone;
             this.DataCriacao = dataCriacao;
-            this.endereco = endereco;
+            this.Endereco = endereco;
 
         }
     }
