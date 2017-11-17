@@ -4,6 +4,12 @@ namespace Util
 {
     public class Validacao
     {
+
+        /// <summary>
+        ///Método para validar o CPF
+        /// </summary>
+        /// <param name="CPF">CPF em forma de texto</param>
+        /// <returns>retorna verdadeiro ou falso</returns>
         public static bool validarCPF(string CPF)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -55,7 +61,11 @@ namespace Util
             //Verifica se os ultimos 2 digitos obtidos são iguais aos do cpf passado
             return CPF.EndsWith(digito);
         }
-
+/// <summary>
+/// Método para validar CNPJ
+/// </summary>
+/// <param name="CNPJ">CNPJ em forma de texto</param>
+/// <returns>retorna verdadeiro ou falso</returns>
         public static bool validarCNPJ(string CNPJ)
         {
             int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
