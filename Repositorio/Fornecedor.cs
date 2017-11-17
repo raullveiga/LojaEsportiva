@@ -81,10 +81,17 @@ namespace Repositorio
             }
             return resultado;
         }
-        }
 
         public string Cadastrar()
         {
             throw new NotImplementedException();
         }
+
+        public string Consultar()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+
     }
