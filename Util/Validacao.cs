@@ -55,5 +55,46 @@ namespace Util
             //Verifica se os ultimos 2 digitos obtidos são iguais aos do cpf passado
             return CPF.EndsWith(digito);
         }
+
+        public static bool validarCNPJ(string CNPJ)
+        {
+            int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            int[] multiplicador2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            string tempCnpj, digito;
+            int soma = 0, resto = 0;
+
+            CNPJ = CNPJ.Trim().Replace(".", "").Replace("-", "").Replace("/", "");
+            if (CNPJ.Length != 14)
+            {
+                return false;
+            }
+            tempCnpj = CNPJ.Substring(0, 12);
+
+            for (int i = 0; i < 12; i++)
+            {
+                soma += Convert.ToInt16(tempCnpj[i].ToString()) * multiplicador1[i];
+            }
+            resto = soma % 11;
+            if (resto < 2)
+                resto = 0;
+            else
+                resto = 11 - resto;
+            digito = resto.ToString();
+            tempCnpj = tempCnpj + digito;
+            soma = 0;
+            for (int i = 0; i < 13; i++)
+            {
+                soma += Convert.ToInt16(tempCnpj[i].ToString()) * multiplicador2[i];
+            }
+
+            resto = soma % 11;
+            if (resto < 2)
+                resto = 0;
+            else
+                resto = 11 - resto;
+            digito = resto.ToString();
+
+            return CNPJ.EndsWith(digito);
+        }
     }
 }
