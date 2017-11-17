@@ -1,4 +1,4 @@
-namespace Dominio.classes
+namespace Dominio
 {
     public class Endereco
     {
