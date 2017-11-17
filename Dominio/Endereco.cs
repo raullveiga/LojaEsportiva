@@ -5,9 +5,7 @@ namespace Dominio
     /// Classe para as informações de endereço
     /// </summary>
     public class Endereco
-    {
-
-        
+    {   
         public string Logradouro { get; set; }
         public string Numero { get; set; }
         public string Complemento { get; set; }
