@@ -5,7 +5,6 @@ namespace Dominio
     public class PJ : Pessoa
     {
         
-        
         public string RazaoSocial { get; set; }
         public string Cnpj { get; set; }
         public DateTime DataCriacao { get; set; }
