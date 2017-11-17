@@ -1,6 +1,6 @@
 using Dominio;
-using Dominio.classes;
 using System;
+using System.IO;
 
 namespace Repositorio
 {
@@ -9,14 +9,14 @@ namespace Repositorio
 
         public PJ Empresa { get; set; }
         public string Categoria { get; set; }
-        public DateTime DataCadastro { get; set; }
+        
 
 
         public Fornecedor(PJ empresa, string categoria, DateTime dataCadastro)
         {
             this.Empresa = empresa;
             this.Categoria = categoria;
-            this.DataCadastro = dataCadastro;
+            
 
         }
 
