@@ -1,6 +1,7 @@
 using Dominio;
 using System;
 using System.IO;
+using System.Text;
 
 namespace Repositorio
 {
@@ -25,9 +26,34 @@ namespace Repositorio
             throw new NotImplementedException();
         }
 
-        public string Consultar()
+        public string Consultar(string NomeFornecedor)
         {
-            throw new NotImplementedException();
+             string resultado = "Fornecedor não encontrado";
+            StreamReader ler = null;
+            try
+            {
+                ler = new StreamReader("fornecedor.csv", Encoding.Default);
+                string linha = "";
+                while ((linha = ler.ReadLine()) != null)
+                {
+                    string[] dados = linha.Split(';');
+                    if (dados[0] == NomeFornecedor)
+                    {
+                        resultado = linha;
+                        break;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                resultado = "erro ao tentar ler o arquivo. " + ex.Message;
+
+            }
+            finally
+            {
+                ler.Close();
+            }
+            return resultado;
+        }
         }
     }
-}
