@@ -4,27 +4,36 @@ using System.Text;
 using Dominio;
 
 
-namespace Repositorio
+namespace Repositorio 
 {
-    public class GerenciarProduto
+    public class GerenciarProduto : IDominio
     {
-        public void Cadastrar(Produto produto)
+        public string Cadastrar(Produto produto)
         {
             StreamWriter sv = null;
+            string retorno; 
             try
             {
                 sv = new StreamWriter("produtos.csv", true);
                 sv.WriteLine(produto.Cod + ";" + produto.Nome + ";" + produto.PrecoVenda + ";" + produto.PrecoCompra + ";" + produto.Data + ";" + produto.Unidade);
+                retorno = "Cadastrado com sucesso!";
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message);
+                retorno = "Erro ao cadastrar : "+ ex.Message;
             }
             finally
             {
                 sv.Close();
             }
+            return retorno;
         }
+
+        public string Cadastrar()
+        {
+            throw new NotImplementedException();
+        }
+
         public string Consultar(string Texto)
         {
             string resultado = "Produto não encontrado";
@@ -55,7 +64,7 @@ namespace Repositorio
             return resultado;
         }
 
-        public string Consultar(DateTime Data)
+        public string Consultar()
         {
             throw new NotImplementedException();
         }
