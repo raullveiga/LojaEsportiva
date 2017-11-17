@@ -1,7 +1,7 @@
 using System;
 
 namespace Dominio {
-    public class Pessoa {
+    public abstract class Pessoa {
         public int Id { get; set; }
         public string Email { get; set; }
         public string Telefone { get; set; }
