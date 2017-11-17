@@ -1,4 +1,5 @@
-namespace Dominio.classes
+namespace Dominio
+
 {
     public class Endereco
     {
@@ -26,6 +27,7 @@ namespace Dominio.classes
             this.Cidade = cidade;
             this.Uf = uf;
         }
+
 
 
 
