@@ -10,7 +10,7 @@ namespace Util
         /// </summary>
         /// <param name="CPF">CPF em forma de texto</param>
         /// <returns>retorna verdadeiro ou falso</returns>
-        public static bool validarCPF(string CPF)
+        public bool validarCPF(string CPF)
         {
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };

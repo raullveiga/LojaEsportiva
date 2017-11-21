@@ -722,11 +722,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\LojaEsportiva\\Programa\\Programa.csproj",
+      "projectUniqueName": "C:\\LojaEsportiva\\Programa\\Programa.csproj",
       "projectName": "Programa",
-      "projectPath": "c:\\LojaEsportiva\\Programa\\Programa.csproj",
+      "projectPath": "C:\\LojaEsportiva\\Programa\\Programa.csproj",
       "packagesPath": "C:\\Users\\45610136873\\.nuget\\packages\\",
-      "outputPath": "c:\\LojaEsportiva\\Programa\\obj\\",
+      "outputPath": "C:\\LojaEsportiva\\Programa\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -743,14 +743,14 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "c:\\LojaEsportiva\\Repositorio\\Repositorio.csproj": {
-              "projectPath": "c:\\LojaEsportiva\\Repositorio\\Repositorio.csproj"
+            "C:\\LojaEsportiva\\Repositorio\\Repositorio.csproj": {
+              "projectPath": "C:\\LojaEsportiva\\Repositorio\\Repositorio.csproj"
             },
-            "c:\\LojaEsportiva\\Dominio\\Dominio.csproj": {
-              "projectPath": "c:\\LojaEsportiva\\Dominio\\Dominio.csproj"
+            "C:\\LojaEsportiva\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\LojaEsportiva\\Dominio\\Dominio.csproj"
             },
-            "c:\\LojaEsportiva\\Util\\Util.csproj": {
-              "projectPath": "c:\\LojaEsportiva\\Util\\Util.csproj"
+            "C:\\LojaEsportiva\\Util\\Util.csproj": {
+              "projectPath": "C:\\LojaEsportiva\\Util\\Util.csproj"
             }
           }
         }

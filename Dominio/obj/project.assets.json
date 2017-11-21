@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\LojaEsportiva\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\LojaEsportiva\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "c:\\LojaEsportiva\\Dominio\\Dominio.csproj",
+      "projectPath": "C:\\LojaEsportiva\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\45610136873\\.nuget\\packages\\",
-      "outputPath": "c:\\LojaEsportiva\\Dominio\\obj\\",
+      "outputPath": "C:\\LojaEsportiva\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

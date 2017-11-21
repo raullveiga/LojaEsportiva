@@ -183,11 +183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\LojaEsportiva\\Util\\Util.csproj",
+      "projectUniqueName": "C:\\LojaEsportiva\\Util\\Util.csproj",
       "projectName": "Util",
-      "projectPath": "c:\\LojaEsportiva\\Util\\Util.csproj",
+      "projectPath": "C:\\LojaEsportiva\\Util\\Util.csproj",
       "packagesPath": "C:\\Users\\45610136873\\.nuget\\packages\\",
-      "outputPath": "c:\\LojaEsportiva\\Util\\obj\\",
+      "outputPath": "C:\\LojaEsportiva\\Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

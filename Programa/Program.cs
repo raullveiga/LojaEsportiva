@@ -28,15 +28,15 @@ namespace Programa
                     switch (opcao)
                     {
 
-                        /* case 1:
+                        case 1:
                             CadastrarCliente();
-                            break; */
+                            break;
                         case 2:
                             CadastrarProduto();
                             break;
-                          case 3:
-                             CadastrarFornecedor();
-                             break;
+                        case 3:
+                            CadastrarFornecedor();
+                            break;
                         /*
                          case 4:
                              RealizarPedido();
@@ -61,6 +61,7 @@ namespace Programa
             }
 
         }
+
         static void CadastrarProduto()
         {
 
@@ -92,6 +93,7 @@ namespace Programa
         {
 
             PJ fornec = new PJ();
+            Endereco End = new Endereco();
             System.Console.WriteLine("Digite o código do fornecedor: ");
             fornec.Id = Convert.ToInt16(Console.ReadLine());
             System.Console.WriteLine("Digite a razão social: ");
@@ -106,17 +108,20 @@ namespace Programa
             DateTime utcDate = DateTime.UtcNow;
             fornec.DataCadastro = utcDate;
             System.Console.WriteLine("Digite o logradouro: ");
-            fornec.Endereco.Logradouro = Console.ReadLine();
-            System.Console.WriteLine("Digite o número: ");
-            fornec.Endereco.Numero = Console.ReadLine();
-            System.Console.WriteLine("Digite o complemento: ");
-            fornec.Endereco.Complemento = Console.ReadLine();
-            System.Console.WriteLine("Digite o Bairro: ");
-            fornec.Endereco.Bairro = Console.ReadLine();
-            System.Console.WriteLine("Digite a Cidade: ");
-            fornec.Endereco.Cidade = Console.ReadLine();
-            System.Console.WriteLine("Digite UF");
-            fornec.Endereco.Uf = Console.ReadLine();
+
+                End.Logradouro = Console.ReadLine();
+                System.Console.WriteLine("Digite o número: ");
+                End.Numero = Console.ReadLine();
+                System.Console.WriteLine("Digite o complemento: ");
+                End.Complemento = Console.ReadLine();
+                System.Console.WriteLine("Digite o Bairro: ");
+                End.Bairro = Console.ReadLine();
+                System.Console.WriteLine("Digite a Cidade: ");
+                End.Cidade = Console.ReadLine();
+                System.Console.WriteLine("Digite UF");
+                End.Uf = Console.ReadLine();
+
+                fornec.Endereco = End;
             System.Console.WriteLine("Digite a categoria do fornecedor");
             string cat = Console.ReadLine();
 
@@ -133,10 +138,110 @@ namespace Programa
                 Fornecedor fornecedor = new Fornecedor(fornec, cat);
                 System.Console.WriteLine(new Fornecedor().Cadastrar(fornecedor));
 
-            
-            
+
+            }
+        }
+
+        static void CadastrarCliente()
+        {
+
+            Console.WriteLine("1 - Pessoa física\n2 - Pessoa jurídica");
+            string i = Console.ReadLine();
+
+            if (i == "1")
+            {
+                PF cliente = new PF();
+                Endereco End = new Endereco();
+                System.Console.WriteLine("Digite o código do cliente: ");
+                cliente.Id = Convert.ToInt16(Console.ReadLine());
+                System.Console.WriteLine("Digite oNome: ");
+                cliente.Nome = Console.ReadLine();
+                System.Console.WriteLine("Digite o email: ");
+                cliente.Email = Console.ReadLine();
+                System.Console.WriteLine("Digite o telefone: ");
+                cliente.Telefone = Console.ReadLine();
+                System.Console.WriteLine("Digite a data de nascimento DD/MM/AAAA");
+                cliente.DataNascimento = Convert.ToDateTime(Console.ReadLine());
+                DateTime utcDate = DateTime.UtcNow;
+                cliente.DataCadastro = utcDate;
+                System.Console.WriteLine("Digite o logradouro: ");
+
+                End.Logradouro = Console.ReadLine();
+                System.Console.WriteLine("Digite o número: ");
+                End.Numero = Console.ReadLine();
+                System.Console.WriteLine("Digite o complemento: ");
+                End.Complemento = Console.ReadLine();
+                System.Console.WriteLine("Digite o Bairro: ");
+                End.Bairro = Console.ReadLine();
+                System.Console.WriteLine("Digite a Cidade: ");
+                End.Cidade = Console.ReadLine();
+                System.Console.WriteLine("Digite UF");
+                End.Uf = Console.ReadLine();
+
+                cliente.Endereco = End;
+
+                System.Console.WriteLine("Digite o CPF: ");
+                string cpf = Console.ReadLine();
+
+                if (!new Validacao().validarCPF(cpf))
+                {
+                    Console.WriteLine("CPF inválido");
+                }
+                else
+                {
+                    cliente.Cpf = cpf;
+                    System.Console.WriteLine(new Cliente().Cadastrar(cliente));
+                }
+            }
+            else
+            {
+
+                PJ fornec = new PJ();
+                Endereco End = new Endereco();
+                System.Console.WriteLine("Digite o código do fornecedor: ");
+                fornec.Id = Convert.ToInt16(Console.ReadLine());
+                System.Console.WriteLine("Digite a razão social: ");
+                fornec.RazaoSocial = Console.ReadLine();
+                System.Console.WriteLine("Digite o email: ");
+                fornec.Email = Console.ReadLine();
+                System.Console.WriteLine("Digite o telefone: ");
+                fornec.Telefone = Console.ReadLine();
+                System.Console.WriteLine("Digite a data de criação da empresa: DD/MM/AAAA");
+                fornec.DataCriacao = Convert.ToDateTime(Console.ReadLine());
+                DateTime utcDate = DateTime.UtcNow;
+                fornec.DataCadastro = utcDate;
+                System.Console.WriteLine("Digite o logradouro: ");
+
+                End.Logradouro = Console.ReadLine();
+                System.Console.WriteLine("Digite o número: ");
+                End.Numero = Console.ReadLine();
+                System.Console.WriteLine("Digite o complemento: ");
+                End.Complemento = Console.ReadLine();
+                System.Console.WriteLine("Digite o Bairro: ");
+                End.Bairro = Console.ReadLine();
+                System.Console.WriteLine("Digite a Cidade: ");
+                End.Cidade = Console.ReadLine();
+                System.Console.WriteLine("Digite UF");
+                End.Uf = Console.ReadLine();
+
+                fornec.Endereco = End;
+
+                System.Console.WriteLine("Digite o CNPJ: ");
+                string cnpj = Console.ReadLine();
+
+                if (!new Validacao().validarCNPJ(cnpj))
+                {
+                    Console.WriteLine("CNPJ inválido");
+                }
+                else
+                {
+                    fornec.Cnpj = cnpj;
+                    System.Console.WriteLine(new Cliente().Cadastrar(fornec));
+                }
+
             }
         }
     }
 }
+
 

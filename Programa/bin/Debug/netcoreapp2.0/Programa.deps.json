@@ -9,7 +9,8 @@
       "Programa/1.0.0": {
         "dependencies": {
           "Dominio": "1.0.0",
-          "Repositorio": "1.0.0"
+          "Repositorio": "1.0.0",
+          "Util": "1.0.0"
         },
         "runtime": {
           "Programa.dll": {}

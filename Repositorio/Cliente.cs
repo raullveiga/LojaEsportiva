@@ -9,7 +9,7 @@ namespace Repositorio {
         public string Cadastrar () {
             return null;
         }
-        public string Cadatrar (PF clientePf) {
+        public string Cadastrar (PF clientePf) {
             string msg = "";
             StreamWriter sw = null;
             FileInfo fi = new FileInfo ("ClientesPF.csv");
@@ -75,7 +75,7 @@ namespace Repositorio {
             return txt;
         }
 
-        public string Cadatrar (PJ clientePj) {
+        public string Cadastrar (PJ clientePj) {
             string msg = "";
             StreamWriter sw = null;
             FileInfo fi = new FileInfo ("ClientesPJ.csv");
