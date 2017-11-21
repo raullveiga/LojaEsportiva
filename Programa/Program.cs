@@ -62,26 +62,32 @@ namespace Programa
         static void CadastrarProduto(){
             
             Produto p1 = new Produto();
-
-//produto.Cod + ";" + produto.Nome + ";" + produto.PrecoVenda + ";" + produto.PrecoCompra + ";" + produto.Data + ";" + produto.Unidade
-            System.Console.WriteLine("Digite o código do produto: ");
-            p1.Cod = Console.ReadLine();
-            System.Console.WriteLine("Digite o código do produto: ");
-            p1.Nome = Console.ReadLine();
-            System.Console.WriteLine("Digite o código do produto: ");
-            p1.PrecoCompra = Convert.ToDouble(Console.ReadLine());
-            System.Console.WriteLine("Digite o código do produto: ");
-            p1.PrecoCompra = Convert.ToDouble(Console.ReadLine());
-            System.Console.WriteLine("Digite o código do produto: ");
-            p1.Unidade = Console.ReadLine();
-            System.Console.WriteLine("Digite o código do produto: ");
-            p1.Data = Convert.ToDateTime(Console.ReadLine());
-
-            System.Console.WriteLine(new GerenciarProduto().Cadastrar(p1));
-
             
 
+            System.Console.WriteLine("Digite o código do produto: ");
+            p1.Cod = Console.ReadLine();
+
+            System.Console.WriteLine("Digite o nome do produto: ");
+            p1.Nome = Console.ReadLine();
+
+            System.Console.WriteLine("Digite o preço de compra do produto: ");
+            p1.PrecoCompra = Convert.ToDouble(Console.ReadLine());
+
+            System.Console.WriteLine("Digite o preço de venda do produto: ");
+            p1.PrecoVenda = Convert.ToDouble(Console.ReadLine());
+
+            System.Console.WriteLine("Digite a unidade de medidas do produto: ");
+            p1.Unidade = Console.ReadLine();
+
+            DateTime utcDate = DateTime.UtcNow;
+            p1.Data   =  utcDate;
+            
+            System.Console.WriteLine(new GerenciarProduto().Cadastrar(p1)); 
+
+
+        
         }
+
 
 
 

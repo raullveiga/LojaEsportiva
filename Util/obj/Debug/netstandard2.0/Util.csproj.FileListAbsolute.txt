@@ -6,3 +6,11 @@ C:\Naesportiva\Util\obj\Debug\netstandard2.0\Util.AssemblyInfoInputs.cache
 C:\Naesportiva\Util\obj\Debug\netstandard2.0\Util.AssemblyInfo.cs
 C:\Naesportiva\Util\obj\Debug\netstandard2.0\Util.dll
 C:\Naesportiva\Util\obj\Debug\netstandard2.0\Util.pdb
+C:\LojaEsportiva\Util\bin\Debug\netstandard2.0\Util.deps.json
+C:\LojaEsportiva\Util\bin\Debug\netstandard2.0\Util.dll
+C:\LojaEsportiva\Util\bin\Debug\netstandard2.0\Util.pdb
+C:\LojaEsportiva\Util\obj\Debug\netstandard2.0\Util.csproj.CoreCompileInputs.cache
+C:\LojaEsportiva\Util\obj\Debug\netstandard2.0\Util.AssemblyInfoInputs.cache
+C:\LojaEsportiva\Util\obj\Debug\netstandard2.0\Util.AssemblyInfo.cs
+C:\LojaEsportiva\Util\obj\Debug\netstandard2.0\Util.dll
+C:\LojaEsportiva\Util\obj\Debug\netstandard2.0\Util.pdb
