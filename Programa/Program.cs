@@ -1,6 +1,7 @@
 ﻿using System;
 using Dominio;
 using Repositorio;
+using Util;
 
 namespace Programa
 {
@@ -63,7 +64,6 @@ namespace Programa
             
             Produto p1 = new Produto();
             
-
             System.Console.WriteLine("Digite o código do produto: ");
             p1.Cod = Console.ReadLine();
 
@@ -84,8 +84,54 @@ namespace Programa
             
             System.Console.WriteLine(new GerenciarProduto().Cadastrar(p1)); 
 
+      //int id, string razaoSocial, string cnpj, string email, string telefone, DateTime dataCriacao, Endereco endereco
+        }
+        static void CadastrarFornecedor(){
+            PJ fornec = new PJ();
+            System.Console.WriteLine("Digite o código do fornecedor: ");
+            fornec.Id=Convert.ToInt16(Console.ReadLine());
+            System.Console.WriteLine("Digite a razão social: ");
+            fornec.RazaoSocial = Console.ReadLine();
+            System.Console.WriteLine("Digite o email: ");
+            fornec.Email = Console.ReadLine();
+            System.Console.WriteLine("Digite o telefone: ");
+            fornec.Telefone = Console.ReadLine();
+            System.Console.WriteLine("Digite a data de criação da empresa: DD/MM/AAAA");
+            fornec.DataCriacao = Convert.ToDateTime(Console.ReadLine());
+            DateTime utcDate = DateTime.UtcNow;
+            fornec.DataCadastro   =  utcDate;
+            System.Console.WriteLine("Digite o logradouro: ");
+            fornec.Endereco.Logradouro = Console.ReadLine();
+            System.Console.WriteLine("Digite o número: ");
+            fornec.Endereco.Numero = Console.ReadLine();
+            System.Console.WriteLine("Digite o complemento: ");
+            fornec.Endereco.Complemento = Console.ReadLine();
+            System.Console.WriteLine("Digite o Bairro: ");
+            fornec.Endereco.Bairro = Console.ReadLine();
+            System.Console.WriteLine("Digite a Cidade: ");
+            fornec.Endereco.Cidade = Console.ReadLine();
+            System.Console.WriteLine("Digite UF");
+            fornec.Endereco.Uf = Console.ReadLine();
+            System.Console.WriteLine("Digite a categoria do fornecedor");
+                   
+            System.Console.WriteLine("Digite o CNPJ: ");
+            string cnpj=Console.ReadLine();
+            
+            Validacao v1 = new Validacao();
+            
+            if(!v1.validarCNPJ(cnpj)){
+                Console.WriteLine("CNPJ inválido");
+                 }else{
+                   fornec.Cnpj =cnpj;
 
-        
+
+                   
+                 }
+
+                 
+            
+
+
         }
 
 
