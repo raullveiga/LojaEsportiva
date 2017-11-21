@@ -34,16 +34,17 @@ namespace Programa
                         case 2:
                             CadastrarProduto();
                             break;
-                       /*  case 3:
-                            CadastrarFornecedor();
-                            break;
-                        case 4:
-                            RealizarPedido();
-                            break;
-                        case 5:
-                            ConsultarHistorico();
-                            break; */
-                            case 9:
+                          case 3:
+                             CadastrarFornecedor();
+                             break;
+                        /*
+                         case 4:
+                             RealizarPedido();
+                             break;
+                         case 5:
+                             ConsultarHistorico();
+                             break; */
+                        case 9:
                             break;
                         default:
                             Console.WriteLine("Opção Inválida");
@@ -56,14 +57,15 @@ namespace Programa
             }
             catch (System.Exception e)
             {
-               Console.WriteLine("erro ao tentar ler o arquivo. " + e.Message);
+                Console.WriteLine("erro ao tentar ler o arquivo. " + e.Message);
             }
 
         }
-        static void CadastrarProduto(){
-            
+        static void CadastrarProduto()
+        {
+
             Produto p1 = new Produto();
-            
+
             System.Console.WriteLine("Digite o código do produto: ");
             p1.Cod = Console.ReadLine();
 
@@ -80,17 +82,20 @@ namespace Programa
             p1.Unidade = Console.ReadLine();
 
             DateTime utcDate = DateTime.UtcNow;
-            p1.Data   =  utcDate;
-            
-            System.Console.WriteLine(new GerenciarProduto().Cadastrar(p1)); 
+            p1.Data = utcDate;
 
-      //int id, string razaoSocial, string cnpj, string email, string telefone, DateTime dataCriacao, Endereco endereco
+            System.Console.WriteLine(new GerenciarProduto().Cadastrar(p1));
+
+            //int id, string razaoSocial, string cnpj, string email, string telefone, DateTime dataCriacao, Endereco endereco
         }
-        static void CadastrarFornecedor(){
+        static void CadastrarFornecedor()
+        {
+
             PJ fornec = new PJ();
             System.Console.WriteLine("Digite o código do fornecedor: ");
-            fornec.Id=Convert.ToInt16(Console.ReadLine());
+            fornec.Id = Convert.ToInt16(Console.ReadLine());
             System.Console.WriteLine("Digite a razão social: ");
+
             fornec.RazaoSocial = Console.ReadLine();
             System.Console.WriteLine("Digite o email: ");
             fornec.Email = Console.ReadLine();
@@ -99,7 +104,7 @@ namespace Programa
             System.Console.WriteLine("Digite a data de criação da empresa: DD/MM/AAAA");
             fornec.DataCriacao = Convert.ToDateTime(Console.ReadLine());
             DateTime utcDate = DateTime.UtcNow;
-            fornec.DataCadastro   =  utcDate;
+            fornec.DataCadastro = utcDate;
             System.Console.WriteLine("Digite o logradouro: ");
             fornec.Endereco.Logradouro = Console.ReadLine();
             System.Console.WriteLine("Digite o número: ");
@@ -113,31 +118,25 @@ namespace Programa
             System.Console.WriteLine("Digite UF");
             fornec.Endereco.Uf = Console.ReadLine();
             System.Console.WriteLine("Digite a categoria do fornecedor");
-                   
+            string cat = Console.ReadLine();
+
             System.Console.WriteLine("Digite o CNPJ: ");
-            string cnpj=Console.ReadLine();
-            
-            Validacao v1 = new Validacao();
-            
-            if(!v1.validarCNPJ(cnpj)){
+            string cnpj = Console.ReadLine();
+
+            if (!new Validacao().validarCNPJ(cnpj))
+            {
                 Console.WriteLine("CNPJ inválido");
-                 }else{
-                   fornec.Cnpj =cnpj;
+            }
+            else
+            {
+                fornec.Cnpj = cnpj;
+                Fornecedor fornecedor = new Fornecedor(fornec, cat);
+                System.Console.WriteLine(new Fornecedor().Cadastrar(fornecedor));
 
-
-                   
-                 }
-
-                 
             
-
-
-        }
-
-
-
-
-
+            
             }
         }
-   
+    }
+}
+

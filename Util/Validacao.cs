@@ -66,7 +66,7 @@ namespace Util
 /// </summary>
 /// <param name="CNPJ">CNPJ em forma de texto</param>
 /// <returns>retorna verdadeiro ou falso</returns>
-        public static bool validarCNPJ(string CNPJ)
+        public bool validarCNPJ(string CNPJ)
         {
             int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
@@ -77,6 +77,7 @@ namespace Util
             if (CNPJ.Length != 14)
             {
                 return false;
+                
             }
             tempCnpj = CNPJ.Substring(0, 12);
 

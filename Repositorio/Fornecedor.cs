@@ -8,26 +8,23 @@ namespace Repositorio
     public class Fornecedor : IDominio
     {
 
-        public Fornecedor(PJ empresa, string categoria) 
-        {
-            this.Empresa = empresa;
-                this.Categoria = categoria;
-               
-        }
-                public PJ Empresa { get; set; }
+        public PJ Empresa { get; set; }
         public string Categoria { get; set; }
         
 
 
-        public Fornecedor(PJ empresa, string categoria, DateTime dataCadastro)
+        public Fornecedor() 
+        {
+        }
+        public Fornecedor(PJ empresa, string categoria)
         {
             this.Empresa = empresa;
-            this.Categoria = categoria;
+            Categoria = categoria;
             
 
         }
 
-        public string Cadastrar(PJ empresa)
+        public string Cadastrar(Fornecedor Fornecedor)
         {
             string rt = "";
 
@@ -35,10 +32,11 @@ namespace Repositorio
 
             try
             {
-                sv = new StreamWriter("produtos.csv", true);                
-                sv.WriteLine(   empresa.Id+";"+empresa.RazaoSocial+";"+empresa.Email+";"+empresa.Telefone+";"+empresa.DataCriacao+";"+
-                                empresa.Endereco.Logradouro+";"+empresa.Endereco.Numero+";"+empresa.Endereco.Complemento+";"+empresa.Endereco.Bairro+";"+
-                                empresa.Endereco.Cidade+";"+empresa.Endereco.Uf+";"+DateTime.Now.ToShortDateString());
+                sv = new StreamWriter("produtos.csv", true);
+                sv.WriteLine(   Fornecedor.Empresa.Id+";"+Categoria+";"+Fornecedor.Empresa.RazaoSocial+";"+Fornecedor.Empresa.Email+";"+Fornecedor.Empresa.Telefone+";"+Fornecedor.Empresa.DataCriacao+";"+
+                                Fornecedor.Empresa.Endereco.Logradouro+";"+Fornecedor.Empresa.Endereco.Numero+";"+Fornecedor.Empresa.Endereco.Complemento+";"+Fornecedor.Empresa.Endereco.Bairro+";"+
+                                Fornecedor.Empresa.Endereco.Cidade+";"+Fornecedor.Empresa.Endereco.Uf+";"+DateTime.Now.ToShortDateString());
+                                
                 rt = "Fornecedor cadastrado com sucesso!";
             }
             catch (Exception ex)
