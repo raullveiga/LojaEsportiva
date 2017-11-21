@@ -1,0 +1,16 @@
+C:\LojaEsportiva\Programa\obj\Debug\netcoreapp2.0\Programa.csproj.CoreCompileInputs.cache
+C:\LojaEsportiva\Programa\obj\Debug\netcoreapp2.0\Programa.AssemblyInfoInputs.cache
+C:\LojaEsportiva\Programa\obj\Debug\netcoreapp2.0\Programa.AssemblyInfo.cs
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Programa.deps.json
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Programa.runtimeconfig.json
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Programa.runtimeconfig.dev.json
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Programa.dll
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Programa.pdb
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Dominio.dll
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Repositorio.dll
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Util.dll
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Repositorio.pdb
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Dominio.pdb
+C:\LojaEsportiva\Programa\bin\Debug\netcoreapp2.0\Util.pdb
+C:\LojaEsportiva\Programa\obj\Debug\netcoreapp2.0\Programa.dll
+C:\LojaEsportiva\Programa\obj\Debug\netcoreapp2.0\Programa.pdb

@@ -10,3 +10,15 @@ C:\Naesportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.AssemblyInfoInpu
 C:\Naesportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.AssemblyInfo.cs
 C:\Naesportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.dll
 C:\Naesportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.pdb
+C:\LojaEsportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.csproj.CoreCompileInputs.cache
+C:\LojaEsportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.AssemblyInfoInputs.cache
+C:\LojaEsportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.AssemblyInfo.cs
+C:\LojaEsportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.dll
+C:\LojaEsportiva\Repositorio\obj\Debug\netstandard2.0\Repositorio.pdb
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Repositorio.deps.json
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Repositorio.dll
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Repositorio.pdb
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Dominio.dll
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Util.dll
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Dominio.pdb
+C:\LojaEsportiva\Repositorio\bin\Debug\netstandard2.0\Util.pdb

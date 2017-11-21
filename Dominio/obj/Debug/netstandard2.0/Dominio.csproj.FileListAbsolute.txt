@@ -6,3 +6,11 @@ C:\Naesportiva\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
 C:\Naesportiva\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
 C:\Naesportiva\Dominio\obj\Debug\netstandard2.0\Dominio.dll
 C:\Naesportiva\Dominio\obj\Debug\netstandard2.0\Dominio.pdb
+C:\LojaEsportiva\Dominio\bin\Debug\netstandard2.0\Dominio.deps.json
+C:\LojaEsportiva\Dominio\bin\Debug\netstandard2.0\Dominio.dll
+C:\LojaEsportiva\Dominio\bin\Debug\netstandard2.0\Dominio.pdb
+C:\LojaEsportiva\Dominio\obj\Debug\netstandard2.0\Dominio.csproj.CoreCompileInputs.cache
+C:\LojaEsportiva\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfoInputs.cache
+C:\LojaEsportiva\Dominio\obj\Debug\netstandard2.0\Dominio.AssemblyInfo.cs
+C:\LojaEsportiva\Dominio\obj\Debug\netstandard2.0\Dominio.dll
+C:\LojaEsportiva\Dominio\obj\Debug\netstandard2.0\Dominio.pdb

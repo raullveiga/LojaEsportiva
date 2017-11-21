@@ -177,23 +177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\33989106880\\.nuget\\packages\\": {},
+    "C:\\Users\\39554884893\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Naesportiva\\util\\Util.csproj",
+      "projectUniqueName": "C:\\LojaEsportiva\\Util\\Util.csproj",
       "projectName": "Util",
-      "projectPath": "C:\\Naesportiva\\util\\Util.csproj",
-      "packagesPath": "C:\\Users\\33989106880\\.nuget\\packages\\",
-      "outputPath": "C:\\Naesportiva\\util\\obj\\",
+      "projectPath": "C:\\LojaEsportiva\\Util\\Util.csproj",
+      "packagesPath": "C:\\Users\\39554884893\\.nuget\\packages\\",
+      "outputPath": "C:\\LojaEsportiva\\Util\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\33989106880\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\39554884893\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
