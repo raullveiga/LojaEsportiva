@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.0",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.0": {
+      "Programa/1.0.0": {
+        "dependencies": {
+          "Dominio": "1.0.0",
+          "Repositorio": "1.0.0"
+        },
+        "runtime": {
+          "Programa.dll": {}
+        }
+      },
+      "Dominio/1.0.0": {
+        "runtime": {
+          "Dominio.dll": {}
+        }
+      },
+      "Repositorio/1.0.0": {
+        "dependencies": {
+          "Dominio": "1.0.0",
+          "Util": "1.0.0"
+        },
+        "runtime": {
+          "Repositorio.dll": {}
+        }
+      },
+      "Util/1.0.0": {
+        "runtime": {
+          "Util.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Programa/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Repositorio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Util/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
